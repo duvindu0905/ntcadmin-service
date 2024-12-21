@@ -1,9 +1,10 @@
+// config/db.js
 const mongoose = require('mongoose');
-require('dotenv').config(); // Ensure dotenv is loading environment variables
+require('dotenv').config();  // Ensure dotenv is loading environment variables
 
 const connectDB = async () => {
   try {
-    // Get the MongoDB URI from environment variables for ntcadmin service
+    // Get the MongoDB URI from environment variables
     const mongoURI = process.env.MONGO_URI_NTCADMIN;
 
     if (!mongoURI) {
@@ -12,7 +13,7 @@ const connectDB = async () => {
 
     mongoose.set('strictQuery', true);  // Enable strict query for Mongoose 6+
 
-    // Connect to MongoDB without the deprecated options
+    // Connect to MongoDB
     await mongoose.connect(mongoURI);
 
     console.log('NTC Admin MongoDB connected');
@@ -23,3 +24,4 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+

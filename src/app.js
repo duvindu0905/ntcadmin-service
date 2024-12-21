@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const swaggerUi = require('swagger-ui-express');
 const connectDB = require('./config/db');  // MongoDB connection for ntcadmin service
 const ntcadminRoutes = require('./routes/ntcadminRoute');  // Ensure this path is correct
-const swaggerDocument = require('../swagger/ntcadmin-swagger.json');  // Swagger documentation for ntcadmin service
+const swaggerDocument = require('../swagger/swagger.json');  // Swagger documentation for ntcadmin service
 
 const app = express();
 

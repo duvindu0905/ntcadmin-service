@@ -4,12 +4,6 @@ const app = require('./src/app');  // Ensure to adjust path accordingly
 const dotenv = require('dotenv');  // To load environment variables from .env file
 dotenv.config();  // Load environment variables
 
-// Import the database connection function
-const connectDB = require('./src/connectDB');  // Adjust path accordingly
-
-// Connect to MongoDB
-connectDB();
-
 // Define the port from environment variables or default to 8086
 const PORT = process.env.PORT || 8086;
 
