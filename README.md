@@ -3,9 +3,7 @@ nibm index - YR3COBSCCOMP232P-007
 
 Api for ntcadmin service 
 
-url: https://api.ntcadminservice.bussewaya.online
+url: https://ntcadmin-service-193893744076.us-central1.run.app/ntcadmin-service/ntcadmins
 
-example: https://api.ntcadminservice.bussewaya.online/ntcadmin-service/ntcadmins
-
-swagger url: https://api.ntcadminservice.bussewaya.online/api-docs/#/
+swagger url: https://ntcadmin-service-193893744076.us-central1.run.app/api-docs/#/
 
